@@ -4,8 +4,6 @@
 
 
 // --- Importing
-import minetweaker.item.IItemStack;
-import minetweaker.data.IData;
 import mods.nei.NEI;
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.ChemicalBath;

@@ -4,8 +4,6 @@
 
 
 // --- Importing
-import minetweaker.item.IItemStack;
-import minetweaker.data.IData;
 import mods.extraUtils.QED;
 
 

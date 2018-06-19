@@ -2,11 +2,6 @@
 
 
 
-// --- Importing
-import minetweaker.item.IItemStack;
-import minetweaker.data.IData;
-
-
 // --- Variables
 var stone = <ore:stoneSmooth>;
 var comparator = <minecraft:comparator>;

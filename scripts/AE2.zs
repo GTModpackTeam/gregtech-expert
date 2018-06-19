@@ -800,7 +800,7 @@ recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:25>, [
 
 //Blank Pattern
 recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:52>, [
-[<appliedenergistics2:tile.BlockQuartzGlass>, <ore:plateGlowstone>, <appliedenergistics2:tile.BlockQuartzGlass>],
+[QuartzGlass, <ore:plateGlowstone>, QuartzGlass],
 [<ore:plateGlowstone>, <ore:itemCertusQuartz>, <ore:plateGlowstone>],
 [<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>]]);
   
@@ -1013,13 +1013,13 @@ recipes.addShaped(<appliedenergistics2:item.ToolBiometricCard>, [
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],[null, null, null]]);
 
 //Quartz Glass
-AlloySmelter.addRecipe(<appliedenergistics2:tile.BlockQuartzGlass> * 4, <minecraft:glass> * 4, <gregtech:gt.metaitem.01:2516> * 4, 400, 16);
+AlloySmelter.addRecipe(QuartzGlass * 4, <minecraft:glass> * 4, <gregtech:gt.metaitem.01:2516> * 4, 400, 16);
 
 //Quartz Fiber
-Wiremill.addRecipe(<appliedenergistics2:item.ItemMultiPart:140>, <gregtech:gt.metaitem.01:23516> * 2, 200, 128);
-Wiremill.addRecipe(<appliedenergistics2:item.ItemMultiPart:140>, <gregtech:gt.metaitem.01:23517> * 1, 200, 128);
-Wiremill.addRecipe(<appliedenergistics2:item.ItemMultiPart:140>, <gregtech:gt.metaitem.01:23522> * 8, 200, 128);
-Wiremill.addRecipe(<appliedenergistics2:item.ItemMultiPart:140>, <gregtech:gt.metaitem.01:23523>  * 4, 200, 128);
+Wiremill.addRecipe(QuartzFiber, <gregtech:gt.metaitem.01:23516> * 2, 200, 128);
+Wiremill.addRecipe(QuartzFiber, <gregtech:gt.metaitem.01:23517> * 1, 200, 128);
+Wiremill.addRecipe(QuartzFiber, <gregtech:gt.metaitem.01:23522> * 8, 200, 128);
+Wiremill.addRecipe(QuartzFiber, <gregtech:gt.metaitem.01:23523>  * 4, 200, 128);
 
 // --- Recycle UStorageHousing
 mods.gregtech.Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2523>, <gregtech:gt.metaitem.01:2522>, <gregtech:gt.metaitem.01:2523>, <gregtech:gt.metaitem.01:2522>],

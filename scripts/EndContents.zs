@@ -3,11 +3,6 @@
 
 
 
-// --- Importing
-import minetweaker.item.IItemStack;
-import minetweaker.data.IData;
-
-
 // --- Removing Recipes
 recipes.remove(<gregtech:gt.blockmachines:1195>);
 recipes.remove(<gregtech:gt.blockmachines:1194>);

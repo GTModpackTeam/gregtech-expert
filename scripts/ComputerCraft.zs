@@ -3,11 +3,6 @@
 
 
 
-// --- Importing
-import minetweaker.item.IItemStack;
-import minetweaker.data.IData;
-
-
 // --- Removing Recipes
 recipes.remove(<ComputerCraft:CC-TurtleAdvanced>);
 recipes.remove(<ComputerCraft:CC-Turtle>);

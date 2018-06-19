@@ -1,10 +1,8 @@
-//Created by Honon
+//Created by Tier
 
 
 
 // --- Importing
-import minetweaker.item.IItemStack;
-import minetweaker.data.IData;
 import mods.thaumcraft.Arcane;
 import mods.thaumcraft.Crucible;
 import mods.thaumcraft.Infusion;

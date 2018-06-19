@@ -3,11 +3,6 @@
 
 
 
-// --- Importing
-import minetweaker.item.IItemStack;
-import minetweaker.data.IData;
-
-
 // --- Removing Recipes
 recipes.remove(<LogisticsPipes:item.PipeItemsRemoteOrdererLogistics>);
 recipes.remove(<LogisticsPipes:item.PipeItemsBasicTransport>);
