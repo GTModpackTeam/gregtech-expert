@@ -443,12 +443,12 @@ recipes.addShaped(Illuminated, [
 // --- Terminal
 recipes.addShaped(Terminal, [
 [NQuartzRod, QuartziteScrew, NQuartzRod],
-[Illuminated, <ore:MvCircuit>, CertusPlate],
+[Illuminated, MVCircuit, CertusPlate],
 [NQuartzRod, Screwdriver, NQuartzRod]]);
 // - Alternate Recipe
 recipes.addShaped(Terminal, [
 [NQuartzRod, Screwdriver, NQuartzRod],
-[Illuminated, <ore:MvCircuit>, CertusPlate],
+[Illuminated, MVCircuit, CertusPlate],
 [NQuartzRod, QuartziteScrew, NQuartzRod]]);
 
 // --- Crafting Terminal
