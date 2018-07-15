@@ -8,12 +8,20 @@ recipes.remove(<gregtech:gt.blockmachines:1195>);
 recipes.remove(<gregtech:gt.blockmachines:1194>);
 
 
-// --- Recipe setting
-recipes.addShaped(<gregtech:gt.blockmachines:1195>, [[<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor:1>, <ore:circuitMaster>], [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.blockmachines:1194>, <gregtech:gt.metaitem.01:32674>], [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor:1>, <gregtech:gt.metaitem.01:32706>]]);
-recipes.addShaped(<gregtech:gt.blockmachines:1194>, [[<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor>, <ore:circuitMaster>], [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.blockmachines:1193>, <gregtech:gt.metaitem.01:32674>], [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor>, <gregtech:gt.metaitem.01:32706>]]);
+// --- Adding Recipes
+recipes.addShaped(<gregtech:gt.blockmachines:1195>, [
+    [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor:1>, <ore:circuitMaster>],
+    [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.blockmachines:1194>, <gregtech:gt.metaitem.01:32674>],
+    [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor:1>, <gregtech:gt.metaitem.01:32706>]
+]);
+recipes.addShaped(<gregtech:gt.blockmachines:1194>, [
+    [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor>, <ore:circuitMaster>],
+    [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.blockmachines:1193>, <gregtech:gt.metaitem.01:32674>],
+    [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor>, <gregtech:gt.metaitem.01:32706>]
+]);
 
 
-// --- #Extreme recipe setting
+// --- Extreme Adding Recipe
 mods.avaritia.ExtremeCrafting.addShaped(<appliedenergistics2:tile.BlockCreativeEnergyCell>, [
 [<ore:batteryUltimate>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <ore:batteryUltimate>], 
 [<gregtech:gt.blockcasings4:8>, <gregtech:gt.blockmachines:18>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <ore:circuitMaster>, <gregtech:gt.blockmachines:18>, <gregtech:gt.blockcasings4:8>], 
@@ -58,4 +66,9 @@ mods.avaritia.ExtremeCrafting.addShaped(<appliedenergistics2:item.ItemCreativeSt
 [<ore:plateDenseNeutronium>, <EnderIO:blockCapacitorBank:1>, <gregtech:gt.blockmachines:179>, <gregtech:gt.blockmachines:179>, <EnderIO:blockCapacitorBank:1>, <gregtech:gt.blockmachines:179>, <gregtech:gt.blockmachines:179>, <EnderIO:blockCapacitorBank:1>, <ore:plateDenseNeutronium>], 
 [<ore:screwNeutronium>, <ore:plateDenseNeutronium>, <ore:plateDenseNeutronium>, <ore:plateDenseNeutronium>, <ore:plateDenseNeutronium>, <ore:plateDenseNeutronium>, <ore:plateDenseNeutronium>, <ore:plateDenseNeutronium>, <ore:screwNeutronium>]]);
 
-mods.botania.RuneAltar.addRecipe(<Botania:pool:1>, [<Botania:rune:8>, <Botania:rune:9>, <Botania:rune:10>, <Botania:rune:11>, <Botania:rune:12>, <Botania:rune:13>, <Botania:rune:14>, <Botania:rune:15>, <Botania:pool:3>, <Botania:pool:3>, <Botania:pool:3>, <Avaritia:Resource:5>], 100000);
+mods.botania.RuneAltar.addRecipe(<Botania:pool:1>, [
+    <Botania:rune:8>, <Botania:rune:9>, <Botania:rune:10>,
+    <Botania:rune:11>, <Botania:rune:12>, <Botania:rune:13>,
+    <Botania:rune:14>, <Botania:rune:15>, <Botania:pool:3>,
+    <Botania:pool:3>, <Botania:pool:3>, <Avaritia:Resource:5>
+], 100000);
