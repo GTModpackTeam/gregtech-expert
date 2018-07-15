@@ -14,7 +14,6 @@ recipes.addShaped(<OpenBlocks:fan>, [
     [<gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.02:21306>, <gregtech:gt.metaitem.01:17305>],
     [<gregtech:gt.metaitem.01:17032>, <gregtech:gt.metaitem.01:17308>, <gregtech:gt.metaitem.01:17032>]
 ]);
-
 recipes.addShaped(<OpenBlocks:vacuumhopper>, [
     [<ore:plateBlackSteel>, <ore:gemEnderEye>, <ore:plateBlackSteel>],
     [<gregtech:gt.metaitem.01:32632>, <EnderIO:blockVacuumChest>, <gregtech:gt.metaitem.01:32617>],

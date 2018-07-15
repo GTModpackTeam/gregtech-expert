@@ -3,12 +3,7 @@
 
 
 
-// --- Importing
-import mods.ic2.Compressor;
-
 // --- Removing Recipes
-recipes.remove(<ExtraUtilities:bedrockiumIngot>);
-recipes.remove(<ExtraUtilities:block_bedrockium>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed:15>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed:14>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed:13>);
@@ -27,10 +22,7 @@ recipes.remove(<ExtraUtilities:cobblestone_compressed:1>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed>);
 recipes.remove(<ExtraUtilities:watering_can:1>);
 recipes.remove(<ExtraUtilities:nodeUpgrade:2>);
-recipes.remove(<ExtraUtilities:nodeUpgrade:1>);
 recipes.remove(<ExtraUtilities:pipes>);
-recipes.remove(<ExtraUtilities:extractor_base:6>);
-recipes.remove(<ExtraUtilities:extractor_base>);
 recipes.remove(<ExtraUtilities:sound_muffler>);
 recipes.remove(<ExtraUtilities:endConstructor>);
 recipes.remove(<ExtraUtilities:filing>);
@@ -56,7 +48,133 @@ recipes.remove(<ExtraUtilities:angelRing:3>);
 recipes.remove(<ExtraUtilities:angelRing:2>);
 recipes.remove(<ExtraUtilities:angelRing:1>);
 recipes.remove(<ExtraUtilities:angelRing>);
-furnace.remove(<ExtraUtilities:block_bedrockium>);
+recipes.removeShapeless(<ExtraUtilities:nodeUpgrade:1>, [
+    <ore:dustRedstone>, <ore:stickWood>, <ore:dustRedstone>,
+    <ore:stickWood>, <minecraft:string>, <ore:stickWood>,
+    <ore:dustRedstone>, <ore:stickWood>, <ore:dustRedstone>
+]);
+
+
+// --- Adding Recipes
+recipes.addShaped(<ExtraUtilities:watering_can:1>, [
+    [<gregtech:gt.metaitem.01:22305>, <IC2:itemFertilizer>, null],
+    [<gregtech:gt.metaitem.01:22305>, <minecraft:bowl>, <gregtech:gt.metaitem.01:22305>],
+    [null, <gregtech:gt.metaitem.01:22305>, null]
+]);
+recipes.addShaped(<ExtraUtilities:nodeUpgrade:2>, [
+    [<gregtech:gt.metaitem.01:17526>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:17526>],
+    [<gregtech:gt.metaitem.01:17305>, <minecraft:diamond_pickaxe>, <gregtech:gt.metaitem.01:17305>],
+    [<gregtech:gt.metaitem.01:17526>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:17526>]
+]);
+recipes.addShaped(<ExtraUtilities:nodeUpgrade:1>, [
+    [<gregtech:gt.metaitem.01:17809>, <gregtech:gt.metaitem.01:17890>, <gregtech:gt.metaitem.01:17809>],
+    [<gregtech:gt.metaitem.01:17890>, <gregtech:gt.metaitem.01:32729>, <gregtech:gt.metaitem.01:17890>],
+    [<gregtech:gt.metaitem.01:17809>, <gregtech:gt.metaitem.01:17890>, <gregtech:gt.metaitem.01:17809>]
+]);
+recipes.addShaped(<ExtraUtilities:pipes> * 8, [
+    [<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.blockmachines:5172>, <Thaumcraft:blockCosmeticSolid:6>],
+    [<gregtech:gt.blockmachines:5612>, <gregtech:gt.blockmachines:5612>, <gregtech:gt.blockmachines:5612>],
+    [<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.blockmachines:5172>, <Thaumcraft:blockCosmeticSolid:6>]
+]);
+recipes.addShaped(<ExtraUtilities:sound_muffler>, [
+    [<Thaumcraft:ItemResource:7>, <Botania:manaResource:22>, <Thaumcraft:ItemResource:7>],
+    [<Botania:manaResource:22>, <gregtech:gt.metaitem.01:32727>, <Botania:manaResource:22>],
+    [<Thaumcraft:ItemResource:7>, <Botania:manaResource:22>, <Thaumcraft:ItemResource:7>]
+]);
+recipes.addShaped(<ExtraUtilities:endConstructor>, [
+    [<gregtech:gt.metaitem.01:24533>, <gregtech:gt.metaitem.01:32744>, <gregtech:gt.metaitem.01:24533>],
+    [<ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:12>, <ExtraUtilities:decorativeBlock1:1>],
+    [<ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:1>]
+]);
+recipes.addShaped(<ExtraUtilities:filing>, [
+    [<gregtech:gt.metaitem.01:22032>, <MultiPageChest:multipagechest>, <gregtech:gt.metaitem.01:22032>],
+    [<gregtech:gt.metaitem.01:22032>, <appliedenergistics2:item.ItemMultiMaterial:47>, <gregtech:gt.metaitem.01:22032>],
+    [<gregtech:gt.metaitem.01:22032>, <MultiPageChest:multipagechest>, <gregtech:gt.metaitem.01:22032>]
+]);
+recipes.addShaped(<ExtraUtilities:enderThermicPump>, [
+    [<ExtraUtilities:decorativeBlock1:11>, <BuildCraft|Factory:pumpBlock>, <ExtraUtilities:decorativeBlock1:11>],
+    [<gregtech:gt.metaitem.01:32612>, <ExtraUtilities:decorativeBlock1:12>, <gregtech:gt.metaitem.01:32612>],
+    [<ExtraUtilities:decorativeBlock1:11>, <gregtech:gt.blockmachines:1142>, <ExtraUtilities:decorativeBlock1:11>]
+]);
+recipes.addShaped(<ExtraUtilities:decorativeBlock1:1>, [
+    [<ExtraUtilities:decorativeBlock1:13>, <EnderIO:blockReinforcedObsidian>, <ExtraUtilities:decorativeBlock1:13>],
+    [<EnderIO:blockReinforcedObsidian>, <gregtech:gt.blockgem1:8>, <EnderIO:blockReinforcedObsidian>],
+    [<ExtraUtilities:decorativeBlock1:13>, <EnderIO:blockReinforcedObsidian>, <ExtraUtilities:decorativeBlock1:13>]
+]);
+recipes.addShaped(<ExtraUtilities:endConstructor:2>, [
+    [null, <gregtech:gt.metaitem.01:24533>, null], [null, <IC2:itemBatCrystal:26>, null],
+    [<ExtraUtilities:decorativeBlock1:1>, <BuildCraft|Silicon:laserBlock>, <IC2:itemToolMiningLaser:26>]
+]);
+recipes.addShaped(<ExtraUtilities:enderQuarry>, [
+    [<ExtraUtilities:decorativeBlock1:11>, <BuildCraft|Builders:fillerBlock>, <ExtraUtilities:decorativeBlock1:11>],
+    [<ExtraUtilities:enderThermicPump>, <ExtraUtilities:decorativeBlock1:12>, <ExtraUtilities:enderThermicPump>],
+    [<IC2:itemToolMiningLaser:26>, <BuildCraft|Builders:machineBlock>, <IC2:itemToolMiningLaser:26>]
+]);
+recipes.addShaped(<ExtraUtilities:decorativeBlock1:11>, [
+    [<ExtraUtilities:decorativeBlock1:8>, <ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:8>],
+    [<ExtraUtilities:decorativeBlock1:1>, <gregtech:gt.metaitem.01:24533>, <ExtraUtilities:decorativeBlock1:1>],
+    [<ExtraUtilities:decorativeBlock1:8>, <ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:8>]
+]);
+recipes.addShaped(<ExtraUtilities:enderCollector>, [
+    [<ExtraUtilities:decorativeBlock1:1>, <IC2:blockAlloyGlass>, <ExtraUtilities:decorativeBlock1:1>],
+    [null, <EnderIO:blockVacuumChest>, null],
+    [<EnderIO:blockReinforcedObsidian>, <IC2:blockAlloy>, <EnderIO:blockReinforcedObsidian>]
+]);
+recipes.addShaped(<ExtraUtilities:decorativeBlock1:12>, [
+    [<ExtraUtilities:decorativeBlock1:2>, <Botania:manaResource:2>, <ExtraUtilities:decorativeBlock1:2>],
+    [<Botania:manaResource:2>, <ExtraUtilities:decorativeBlock1:1>, <Botania:manaResource:2>],
+    [<ExtraUtilities:decorativeBlock1:2>, <Botania:manaResource:2>, <ExtraUtilities:decorativeBlock1:2>]
+]);
+recipes.addShaped(<ExtraUtilities:conveyor> * 4, [
+    [<gregtech:gt.metaitem.01:17032>, <gregtech:gt.metaitem.01:32631>, <gregtech:gt.metaitem.01:17032>],
+    [<gregtech:gt.metaitem.01:32631>, <minecraft:redstone_block>, <gregtech:gt.metaitem.01:32631>],
+    [<gregtech:gt.metaitem.01:17032>, <gregtech:gt.metaitem.01:32631>, <gregtech:gt.metaitem.01:17032>]
+]);
+recipes.addShaped(<ExtraUtilities:chandelier>, [
+    [<gregtech:gt.metaitem.01:17351>, <gregtech:gt.metaitem.01:24500>, <gregtech:gt.metaitem.01:17351>],
+    [<Thaumcraft:blockCandle>, <Thaumcraft:ItemResource:1>, <Thaumcraft:blockCandle>],
+    [null, <Thaumcraft:blockCandle>, null]
+]);
+recipes.addShaped(<ExtraUtilities:decorativeBlock1:14>, [
+    [<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.metaitem.01:17330>, <Thaumcraft:blockCosmeticSolid:6>],
+    [<gregtech:gt.metaitem.01:17330>, <Botania:petalBlock:10>, <gregtech:gt.metaitem.01:17330>],
+    [<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.metaitem.01:17330>, <Thaumcraft:blockCosmeticSolid:6>]
+]);
+recipes.addShaped(<ExtraUtilities:spike_base_diamond> * 4, [
+    [null, <minecraft:diamond_sword>, null],
+    [<minecraft:diamond_sword>, <gregtech:gt.metaitem.01:17500>, <minecraft:diamond_sword>],
+    [<gregtech:gt.metaitem.01:17500>, <Botania:storage:3>, <gregtech:gt.metaitem.01:17500>]
+]);
+recipes.addShaped(<ExtraUtilities:spike_base_gold> * 4, [
+    [null, <minecraft:golden_sword>, null],
+    [<minecraft:golden_sword>, <ExtraUtilities:decorativeBlock1:8>, <minecraft:golden_sword>],
+    [<ExtraUtilities:decorativeBlock1:8>, <ore:blockRoseGold>, <ExtraUtilities:decorativeBlock1:8>]
+]);
+recipes.addShaped(<ExtraUtilities:spike_base> * 4, [
+    [null, <minecraft:iron_sword>, null],
+    [<minecraft:iron_sword>, <ore:plateDenseIron>, <minecraft:iron_sword>],
+    [<ore:plateDenseIron>, <ore:blockIron>, <ore:plateDenseIron>]
+]);
+recipes.addShaped(<ExtraUtilities:drum:1>, [
+    [<ExtraUtilities:bedrockiumIngot>, <EnderIO:blockDarkSteelPressurePlate>, <ExtraUtilities:bedrockiumIngot>],
+    [<ExtraUtilities:bedrockiumIngot>, <EnderIO:blockTank:1>, <ExtraUtilities:bedrockiumIngot>],
+    [<ExtraUtilities:bedrockiumIngot>, <EnderIO:blockDarkSteelPressurePlate>, <ExtraUtilities:bedrockiumIngot>]
+]);
+recipes.addShaped(<ExtraUtilities:drum>, [
+    [<gregtech:gt.metaitem.01:22032>, <minecraft:heavy_weighted_pressure_plate>, <gregtech:gt.metaitem.01:22032>],
+    [<gregtech:gt.metaitem.01:22032>, <EnderIO:blockTank>, <gregtech:gt.metaitem.01:22032>],
+    [<gregtech:gt.metaitem.01:22032>, <minecraft:heavy_weighted_pressure_plate>, <gregtech:gt.metaitem.01:22032>]
+]);
+recipes.addShaped(<ExtraUtilities:angelBlock>, [
+    [<ore:craftingFeather>, <ore:runeAirB>, <ore:craftingFeather>],
+    [<ore:craftingLensYellow>, <EnderIO:blockReinforcedObsidian>, <ore:craftingLensYellow>],
+    [<ore:craftingFeather>, <ore:bEnderAirBottle>, <ore:craftingFeather>]
+]);
+recipes.addShaped(<ExtraUtilities:angelRing>, [
+    [<ore:plateHSSG>, <Thaumcraft:ItemEldritchObject:3>, <ore:plateHSSG>],
+    [<ore:plateNetherStar>, <Thaumcraft:HoverHarness>, <ore:plateNetherStar>],
+    [<ore:plateNaquadria>, <ore:ringHSSG>, <ore:plateNaquadria>]
+]);
 
 // --- Recipe Shapeless
 recipes.addShapeless(<ExtraUtilities:angelRing:4>, [<ExtraUtilities:angelRing>, <minecraft:gold_nugget>, <minecraft:gold_nugget>]);
@@ -64,55 +182,12 @@ recipes.addShapeless(<ExtraUtilities:angelRing:3>, [<ExtraUtilities:angelRing>, 
 recipes.addShapeless(<ExtraUtilities:angelRing:2>, [<ExtraUtilities:angelRing>, <ore:dyePink>, <ore:dyePurple>]);
 recipes.addShapeless(<ExtraUtilities:angelRing:1>, [<ExtraUtilities:angelRing>, <ore:craftingFeather>, <ore:craftingFeather>]);
 
-// --- IC2compressor recipe
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed>, <minecraft:cobblestone> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:1>, <ExtraUtilities:cobblestone_compressed> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:2>, <ExtraUtilities:cobblestone_compressed:1> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:3>, <ExtraUtilities:cobblestone_compressed:2> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:4>, <ExtraUtilities:cobblestone_compressed:3> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:5>, <ExtraUtilities:cobblestone_compressed:4> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:6>, <ExtraUtilities:cobblestone_compressed:5> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:7>, <ExtraUtilities:cobblestone_compressed:6> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:8>, <minecraft:dirt> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:9>, <ExtraUtilities:cobblestone_compressed:8> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:10>, <ExtraUtilities:cobblestone_compressed:9> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:11>, <ExtraUtilities:cobblestone_compressed:10> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:12>, <minecraft:gravel> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:13>, <ExtraUtilities:cobblestone_compressed:12> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:14>, <minecraft:sand> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:15>, <ExtraUtilities:cobblestone_compressed:14> * 9);
-Compressor.addRecipe(<ExtraUtilities:bedrockiumIngot>, <ExtraUtilities:cobblestone_compressed:7> * 9);
-Compressor.addRecipe(<ExtraUtilities:block_bedrockium>, <ExtraUtilities:bedrockiumIngot> * 9);
-
-// --- Recipe setting
-recipes.addShaped(<ExtraUtilities:watering_can:1>, [[<gregtech:gt.metaitem.01:22305>, <IC2:itemFertilizer>, null], [<gregtech:gt.metaitem.01:22305>, <minecraft:bowl>, <gregtech:gt.metaitem.01:22305>], [null, <gregtech:gt.metaitem.01:22305>, null]]);
-recipes.addShaped(<ExtraUtilities:nodeUpgrade:2>, [[<gregtech:gt.metaitem.01:17526>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:17526>], [<gregtech:gt.metaitem.01:17305>, <minecraft:diamond_pickaxe>, <gregtech:gt.metaitem.01:17305>], [<gregtech:gt.metaitem.01:17526>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:17526>]]);
-recipes.addShaped(<ExtraUtilities:nodeUpgrade:1>, [[<gregtech:gt.metaitem.01:17809>, <gregtech:gt.metaitem.01:17890>, <gregtech:gt.metaitem.01:17809>], [<gregtech:gt.metaitem.01:17890>, <gregtech:gt.metaitem.01:32729>, <gregtech:gt.metaitem.01:17890>], [<gregtech:gt.metaitem.01:17809>, <gregtech:gt.metaitem.01:17890>, <gregtech:gt.metaitem.01:17809>]]);
-recipes.addShaped(<ExtraUtilities:pipes> * 8, [[<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.blockmachines:5172>, <Thaumcraft:blockCosmeticSolid:6>], [<gregtech:gt.blockmachines:5612>, <gregtech:gt.blockmachines:5612>, <gregtech:gt.blockmachines:5612>], [<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.blockmachines:5172>, <Thaumcraft:blockCosmeticSolid:6>]]);
-recipes.addShaped(<ExtraUtilities:extractor_base:6>, [[null, <ExtraUtilities:pipes>, null], [<minecraft:redstone>, <witchery:ingredient:10>, <minecraft:redstone>], [<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.metaitem.01:32611>, <Thaumcraft:blockCosmeticSolid:6>]]);
-recipes.addShaped(<ExtraUtilities:extractor_base>, [[null, <ExtraUtilities:pipes>, null], [<minecraft:redstone>, <witchery:ingredient:10>, <minecraft:redstone>], [<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.metaitem.01:32631>, <Thaumcraft:blockCosmeticSolid:6>]]);
-recipes.addShaped(<ExtraUtilities:sound_muffler>, [[<Thaumcraft:ItemResource:7>, <Botania:manaResource:22>, <Thaumcraft:ItemResource:7>], [<Botania:manaResource:22>, <gregtech:gt.metaitem.01:32727>, <Botania:manaResource:22>], [<Thaumcraft:ItemResource:7>, <Botania:manaResource:22>, <Thaumcraft:ItemResource:7>]]);
-recipes.addShaped(<ExtraUtilities:endConstructor>, [[<gregtech:gt.metaitem.01:24533>, <gregtech:gt.metaitem.01:32744>, <gregtech:gt.metaitem.01:24533>], [<ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:12>, <ExtraUtilities:decorativeBlock1:1>], [<ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:1>]]);
-recipes.addShaped(<ExtraUtilities:filing>, [[<gregtech:gt.metaitem.01:22032>, <MultiPageChest:multipagechest>, <gregtech:gt.metaitem.01:22032>], [<gregtech:gt.metaitem.01:22032>, <appliedenergistics2:item.ItemMultiMaterial:47>, <gregtech:gt.metaitem.01:22032>], [<gregtech:gt.metaitem.01:22032>, <MultiPageChest:multipagechest>, <gregtech:gt.metaitem.01:22032>]]);
-recipes.addShaped(<ExtraUtilities:enderThermicPump>, [[<ExtraUtilities:decorativeBlock1:11>, <BuildCraft|Factory:pumpBlock>, <ExtraUtilities:decorativeBlock1:11>], [<gregtech:gt.metaitem.01:32612>, <ExtraUtilities:decorativeBlock1:12>, <gregtech:gt.metaitem.01:32612>], [<ExtraUtilities:decorativeBlock1:11>, <gregtech:gt.blockmachines:1142>, <ExtraUtilities:decorativeBlock1:11>]]);
-recipes.addShaped(<ExtraUtilities:decorativeBlock1:1>, [[<ExtraUtilities:decorativeBlock1:13>, <EnderIO:blockReinforcedObsidian>, <ExtraUtilities:decorativeBlock1:13>], [<EnderIO:blockReinforcedObsidian>, <gregtech:gt.blockgem1:8>, <EnderIO:blockReinforcedObsidian>], [<ExtraUtilities:decorativeBlock1:13>, <EnderIO:blockReinforcedObsidian>, <ExtraUtilities:decorativeBlock1:13>]]);
-recipes.addShaped(<ExtraUtilities:endConstructor:2>, [[null, <gregtech:gt.metaitem.01:24533>, null], [null, <IC2:itemBatCrystal:26>, null], [<ExtraUtilities:decorativeBlock1:1>, <BuildCraft|Silicon:laserBlock>, <IC2:itemToolMiningLaser:26>]]);
-recipes.addShaped(<ExtraUtilities:enderQuarry>, [[<ExtraUtilities:decorativeBlock1:11>, <BuildCraft|Builders:fillerBlock>, <ExtraUtilities:decorativeBlock1:11>], [<ExtraUtilities:enderThermicPump>, <ExtraUtilities:decorativeBlock1:12>, <ExtraUtilities:enderThermicPump>], [<IC2:itemToolMiningLaser:26>, <BuildCraft|Builders:machineBlock>, <IC2:itemToolMiningLaser:26>]]);
-recipes.addShaped(<ExtraUtilities:decorativeBlock1:11>, [[<ExtraUtilities:decorativeBlock1:8>, <ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:8>], [<ExtraUtilities:decorativeBlock1:1>, <gregtech:gt.metaitem.01:24533>, <ExtraUtilities:decorativeBlock1:1>], [<ExtraUtilities:decorativeBlock1:8>, <ExtraUtilities:decorativeBlock1:1>, <ExtraUtilities:decorativeBlock1:8>]]);
-recipes.addShaped(<ExtraUtilities:enderCollector>, [[<ExtraUtilities:decorativeBlock1:1>, <IC2:blockAlloyGlass>, <ExtraUtilities:decorativeBlock1:1>], [null, <EnderIO:blockVacuumChest>, null], [<EnderIO:blockReinforcedObsidian>, <IC2:blockAlloy>, <EnderIO:blockReinforcedObsidian>]]);
-recipes.addShaped(<ExtraUtilities:decorativeBlock1:12>, [[<ExtraUtilities:decorativeBlock1:2>, <Botania:manaResource:2>, <ExtraUtilities:decorativeBlock1:2>], [<Botania:manaResource:2>, <ExtraUtilities:decorativeBlock1:1>, <Botania:manaResource:2>], [<ExtraUtilities:decorativeBlock1:2>, <Botania:manaResource:2>, <ExtraUtilities:decorativeBlock1:2>]]);
-recipes.addShaped(<ExtraUtilities:conveyor> * 4, [[<gregtech:gt.metaitem.01:17032>, <gregtech:gt.metaitem.01:32631>, <gregtech:gt.metaitem.01:17032>], [<gregtech:gt.metaitem.01:32631>, <minecraft:redstone_block>, <gregtech:gt.metaitem.01:32631>], [<gregtech:gt.metaitem.01:17032>, <gregtech:gt.metaitem.01:32631>, <gregtech:gt.metaitem.01:17032>]]);
-recipes.addShaped(<ExtraUtilities:chandelier>, [[<gregtech:gt.metaitem.01:17351>, <gregtech:gt.metaitem.01:24500>, <gregtech:gt.metaitem.01:17351>], [<Thaumcraft:blockCandle>, <Thaumcraft:ItemResource:1>, <Thaumcraft:blockCandle>], [null, <Thaumcraft:blockCandle>, null]]);
-recipes.addShaped(<ExtraUtilities:decorativeBlock1:14>, [[<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.metaitem.01:17321>, <Thaumcraft:blockCosmeticSolid:6>], [<gregtech:gt.metaitem.01:17321>, <Botania:petalBlock:10>, <gregtech:gt.metaitem.01:17321>], [<Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.metaitem.01:17321>, <Thaumcraft:blockCosmeticSolid:6>]]);
-recipes.addShaped(<ExtraUtilities:spike_base_diamond> * 4, [[null, <minecraft:diamond_sword>, null], [<minecraft:diamond_sword>, <gregtech:gt.metaitem.01:17500>, <minecraft:diamond_sword>], [<gregtech:gt.metaitem.01:17500>, <Botania:storage:3>, <gregtech:gt.metaitem.01:17500>]]);
-recipes.addShaped(<ExtraUtilities:spike_base_gold> * 4, [[null, <minecraft:golden_sword>, null], [<minecraft:golden_sword>, <ExtraUtilities:decorativeBlock1:8>, <minecraft:golden_sword>], [<ExtraUtilities:decorativeBlock1:8>, <ore:blockRoseGold>, <ExtraUtilities:decorativeBlock1:8>]]);
-recipes.addShaped(<ExtraUtilities:spike_base> * 4, [[null, <minecraft:iron_sword>, null], [<minecraft:iron_sword>, <ore:plateDenseIron>, <minecraft:iron_sword>], [<ore:plateDenseIron>, <ore:blockIron>, <ore:plateDenseIron>]]);
-recipes.addShaped(<ExtraUtilities:drum:1>, [[<ExtraUtilities:bedrockiumIngot>, <EnderIO:blockDarkSteelPressurePlate>, <ExtraUtilities:bedrockiumIngot>], [<ExtraUtilities:bedrockiumIngot>, <EnderIO:blockTank:1>, <ExtraUtilities:bedrockiumIngot>], [<ExtraUtilities:bedrockiumIngot>, <EnderIO:blockDarkSteelPressurePlate>, <ExtraUtilities:bedrockiumIngot>]]);
-recipes.addShaped(<ExtraUtilities:drum>, [[<gregtech:gt.metaitem.01:22032>, <minecraft:heavy_weighted_pressure_plate>, <gregtech:gt.metaitem.01:22032>], [<gregtech:gt.metaitem.01:22032>, <EnderIO:blockTank>, <gregtech:gt.metaitem.01:22032>], [<gregtech:gt.metaitem.01:22032>, <minecraft:heavy_weighted_pressure_plate>, <gregtech:gt.metaitem.01:22032>]]);
-recipes.addShaped(<ExtraUtilities:angelBlock>, [[<ore:craftingFeather>, <ore:runeAirB>, <ore:craftingFeather>], [<ore:craftingLensYellow>, <EnderIO:blockReinforcedObsidian>, <ore:craftingLensYellow>], [<ore:craftingFeather>, <ore:bEnderAirBottle>, <ore:craftingFeather>]]);
-recipes.addShaped(<ExtraUtilities:angelRing>, [[<ore:plateHSSG>, <witchery:ingredient:9>, <ore:plateHSSG>], [<ore:plateNetherStar>, <Thaumcraft:HoverHarness>, <ore:plateNetherStar>], [<ore:plateNaquadria>, <ore:ringHSSG>, <ore:plateNaquadria>]]);
 
 // --- Cutting Saw
 mods.gregtech.CuttingSaw.addRecipe([<ExtraUtilities:curtains> * 2], <ore:blockWool>, <liquid:water> * 12, 120, 30);
 mods.gregtech.CuttingSaw.addRecipe([<ExtraUtilities:curtains> * 2], <ore:blockWool>, <liquid:ic2distilledwater> * 12, 60, 30);
 mods.gregtech.CuttingSaw.addRecipe([<ExtraUtilities:curtains> * 2], <ore:blockWool>, <liquid:lubricant> * 12, 30, 30);
+
+
+// --- GregTech Compressor - Unstable Ingot Block
+mods.gregtech.Compressor.addRecipe(<ExtraUtilities:decorativeBlock1:5>, <ExtraUtilities:unstableingot:2> * 9, 300, 2);
