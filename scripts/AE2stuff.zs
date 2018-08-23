@@ -7,22 +7,22 @@ import mods.nei.NEI;
 
 
 // --- Variables
-val WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
-val NetworkTool = <appliedenergistics2:item.ToolNetworkTool>;
-val PureFluixCrystal = <appliedenergistics2:item.ItemMultiMaterial:12>;
-val CertusCircuit = <appliedenergistics2:item.ItemMultiMaterial:23>;
-val CalculationCircuit = <appliedenergistics2:item.ItemMultiMaterial:16>;
-val GoldCircuit = <appliedenergistics2:item.ItemMultiMaterial:22>;
-val LogicCircuit = <appliedenergistics2:item.ItemMultiMaterial:18>;
-val DiamondCircuit = <appliedenergistics2:item.ItemMultiMaterial:17>;
-val EngineeringCircuit = <appliedenergistics2:item.ItemMultiMaterial:24>;
+var WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
+var NetworkTool = <appliedenergistics2:item.ToolNetworkTool>;
+var PureFluixCrystal = <appliedenergistics2:item.ItemMultiMaterial:12>;
+var CertusCircuit = <appliedenergistics2:item.ItemMultiMaterial:23>;
+var CalculationCircuit = <appliedenergistics2:item.ItemMultiMaterial:16>;
+var GoldCircuit = <appliedenergistics2:item.ItemMultiMaterial:22>;
+var LogicCircuit = <appliedenergistics2:item.ItemMultiMaterial:18>;
+var DiamondCircuit = <appliedenergistics2:item.ItemMultiMaterial:17>;
+var EngineeringCircuit = <appliedenergistics2:item.ItemMultiMaterial:24>;
 var WController = <ae2stuff:Wireless>;
 var WRod = <ae2stuff:WirelessKit>;
 var WViewer = <ae2stuff:Visualiser>;
 
 
 // --- Ore Dictionary
-val QuartzWrench = <ore:QuartzWrench>;
+var QuartzWrench = <ore:QuartzWrench>;
 QuartzWrench.add(<appliedenergistics2:item.ToolNetherQuartzWrench>);
 QuartzWrench.add(<appliedenergistics2:item.ToolCertusQuartzWrench>);
 var Illuminated = <ore:Illuminated>;

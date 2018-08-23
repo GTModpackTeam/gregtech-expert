@@ -4,7 +4,7 @@
 
 
 // --- Variables
-val CoolantCell10k = <IC2:reactorCoolantSimple:1>.anyDamage();
+var CoolantCell10k = <IC2:reactorCoolantSimple:1>.anyDamage();
 
 
 // --- Recipe Remove

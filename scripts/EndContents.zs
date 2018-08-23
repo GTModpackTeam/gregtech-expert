@@ -8,19 +8,6 @@ recipes.remove(<gregtech:gt.blockmachines:1195>);
 recipes.remove(<gregtech:gt.blockmachines:1194>);
 
 
-// --- Adding Recipes
-recipes.addShaped(<gregtech:gt.blockmachines:1195>, [
-    [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor:1>, <ore:circuitMaster>],
-    [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.blockmachines:1194>, <gregtech:gt.metaitem.01:32674>],
-    [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor:1>, <gregtech:gt.metaitem.01:32706>]
-]);
-recipes.addShaped(<gregtech:gt.blockmachines:1194>, [
-    [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor>, <ore:circuitMaster>],
-    [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.blockmachines:1193>, <gregtech:gt.metaitem.01:32674>],
-    [<ore:circuitMaster>, <DraconicEvolution:draconiumFluxCapacitor>, <gregtech:gt.metaitem.01:32706>]
-]);
-
-
 // --- Extreme Adding Recipe
 mods.avaritia.ExtremeCrafting.addShaped(<appliedenergistics2:tile.BlockCreativeEnergyCell>, [
 [<ore:batteryUltimate>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <gregtech:gt.blockcasings4:8>, <ore:batteryUltimate>], 

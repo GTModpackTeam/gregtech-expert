@@ -3,8 +3,8 @@
 
 
 // --- Variables
-val itemArmorJetpackElectric = <IC2:itemArmorJetpackElectric>.anyDamage();
-val advLappack = <GraviSuite:advLappack>.anyDamage();
+var itemArmorJetpackElectric = <IC2:itemArmorJetpackElectric>.anyDamage();
+var advLappack = <GraviSuite:advLappack>.anyDamage();
 
 
 // --- Removing Recipes

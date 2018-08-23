@@ -228,9 +228,9 @@ recipes.addShaped(<extracells:ecbaseblock>, [
     [<gregtech:gt.metaitem.01:17306>, <ore:plateGlass>, <ore:plateSteel>]
 ]);
 recipes.addShaped(<extracells:storage.component:3>, [
-    [<gregtech:gt.metaitem.01:32706>, <extracells:storage.component:2>, <gregtech:gt.metaitem.01:32706>],
+    [<ore:circuitMaster>, <extracells:storage.component:2>, <ore:circuitMaster>],
     [<extracells:storage.component:2>, <appliedenergistics2:item.ItemMultiMaterial:23>, <extracells:storage.component:2>],
-    [<gregtech:gt.metaitem.01:32706>, <extracells:storage.component:2>, <gregtech:gt.metaitem.01:32706>]
+    [<ore:circuitMaster>, <extracells:storage.component:2>, <ore:circuitMaster>]
 ]);
 recipes.addShaped(<extracells:storage.component:2>, [
     [<gregtech:gt.metaitem.01:32707>, <extracells:storage.component:1>, <gregtech:gt.metaitem.01:32707>],
@@ -245,7 +245,7 @@ recipes.addShaped(<extracells:storage.component:1>, [
 recipes.addShaped(<extracells:storage.component>, [
     [<ore:circuitData>, <appliedenergistics2:item.ItemMultiMaterial:38>, <ore:circuitData>],
     [<appliedenergistics2:item.ItemMultiMaterial:38>, <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:38>],
-    [<gregtech:gt.metaitem.01:32704>, <appliedenergistics2:item.ItemMultiMaterial:38>, <ore:circuitData>]
+    [<ore:circuitData>, <appliedenergistics2:item.ItemMultiMaterial:38>, <ore:circuitData>]
 ]);
 
 // --- Recipe Shapeless

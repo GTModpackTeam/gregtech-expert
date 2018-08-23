@@ -11,31 +11,31 @@ import mods.thaumcraft.Research;
 
 // --- Variables
 // --- AppliedEnergistics2
-val CertusCircuit = <appliedenergistics2:item.ItemMultiMaterial:23>;
-val GoldCircuit = <appliedenergistics2:item.ItemMultiMaterial:22>;
-val EngineeringCircuit = <appliedenergistics2:item.ItemMultiMaterial:24>;
-val FormationCore = <appliedenergistics2:item.ItemMultiMaterial:43>;
-val AnnihilationCore = <appliedenergistics2:item.ItemMultiMaterial:44>;
-val EnergyCell = <appliedenergistics2:tile.BlockEnergyCell>;
-val DEnergyCell = <appliedenergistics2:tile.BlockDenseEnergyCell>;
-val WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
+var CertusCircuit = <appliedenergistics2:item.ItemMultiMaterial:23>;
+var GoldCircuit = <appliedenergistics2:item.ItemMultiMaterial:22>;
+var EngineeringCircuit = <appliedenergistics2:item.ItemMultiMaterial:24>;
+var FormationCore = <appliedenergistics2:item.ItemMultiMaterial:43>;
+var AnnihilationCore = <appliedenergistics2:item.ItemMultiMaterial:44>;
+var EnergyCell = <appliedenergistics2:tile.BlockEnergyCell>;
+var DEnergyCell = <appliedenergistics2:tile.BlockDenseEnergyCell>;
+var WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
 
 // --- ThaumicEnrgistics
-val DiffusionCore = <thaumicenergistics:material:0>;
-val CoalescenceCore = <thaumicenergistics:material:1>;
-val CreativeEssentiaStorageCell = <thaumicenergistics:storage.essentia:4>;
-val Terminal = <thaumicenergistics:part.base:4>;
-val CraftingTerminal = <thaumicenergistics:part.base:5>;
-val WirelessTerminal = <thaumicenergistics:wireless.essentia.terminal>;
+var DiffusionCore = <thaumicenergistics:material:0>;
+var CoalescenceCore = <thaumicenergistics:material:1>;
+var CreativeEssentiaStorageCell = <thaumicenergistics:storage.essentia:4>;
+var Terminal = <thaumicenergistics:part.base:4>;
+var CraftingTerminal = <thaumicenergistics:part.base:5>;
+var WirelessTerminal = <thaumicenergistics:wireless.essentia.terminal>;
 var Storage1K = <thaumicenergistics:storage.essentia:0>;
-val Storage4K = <thaumicenergistics:storage.essentia:1>;
-val Storage16K = <thaumicenergistics:storage.essentia:2>;
-val Storage64K = <thaumicenergistics:storage.essentia:3>;
-val EStorageHousing = <thaumicenergistics:storage.casing>;
-val StorageComponent1K = <thaumicenergistics:storage.component:0>;
-val StorageComponent4K = <thaumicenergistics:storage.component:1>;
-val StorageComponent16K = <thaumicenergistics:storage.component:2>;
-val StorageComponent64K = <thaumicenergistics:storage.component:3>;
+var Storage4K = <thaumicenergistics:storage.essentia:1>;
+var Storage16K = <thaumicenergistics:storage.essentia:2>;
+var Storage64K = <thaumicenergistics:storage.essentia:3>;
+var EStorageHousing = <thaumicenergistics:storage.casing>;
+var StorageComponent1K = <thaumicenergistics:storage.component:0>;
+var StorageComponent4K = <thaumicenergistics:storage.component:1>;
+var StorageComponent16K = <thaumicenergistics:storage.component:2>;
+var StorageComponent64K = <thaumicenergistics:storage.component:3>;
 
 // --- Thaumcraft
 var AirShard = <Thaumcraft:ItemShard:0>;
@@ -47,22 +47,22 @@ var EntropyShard = <Thaumcraft:ItemShard:5>;
 var BalancedShard = <Thaumcraft:ItemShard:6>;
 
 // --- GregTech
-val CertusPlate = <gregtech:gt.metaitem.01:17516>;
-val NQuartzPlate = <gregtech:gt.metaitem.01:17522>;
+var CertusPlate = <gregtech:gt.metaitem.01:17516>;
+var NQuartzPlate = <gregtech:gt.metaitem.01:17522>;
 var NetherCertusRod = <gregtech:gt.metaitem.01:23522>;
-val NANDChip = <gregtech:gt.metaitem.01:32700>;
-val BasicCircuit = <gregtech:gt.metaitem.01:32701>;
-val GoodCircuit = <gregtech:gt.metaitem.01:32702>;
-val AdvCircuit = <gregtech:gt.metaitem.01:32703>;
-val DataCircuit = <gregtech:gt.metaitem.01:32704>;
-val SteelPlate = <ore:plateSteel>;
-val AluminiumPlate = <ore:plateAluminium>;
-val StainlessPlate = <ore:plateStainlessSteel>;
-val TitaniumPlate = <ore:plateTitanium>;
+var NANDChip = <gregtech:gt.metaitem.01:32700>;
+var BasicCircuit = <gregtech:gt.metaitem.01:32701>;
+var GoodCircuit = <gregtech:gt.metaitem.01:32702>;
+var AdvCircuit = <gregtech:gt.metaitem.01:32703>;
+var DataCircuit = <gregtech:gt.metaitem.01:32704>;
+var SteelPlate = <ore:plateSteel>;
+var AluminiumPlate = <ore:plateAluminium>;
+var StainlessPlate = <ore:plateStainlessSteel>;
+var TitaniumPlate = <ore:plateTitanium>;
 var ThaumiumPlate = <ore:plateThaumium>;
-val QuartziteScrew = <ore:screwQuartzite>;
-val Screwdriver = <ore:craftingToolScrewdriver>;
-val HHammer = <ore:craftingToolHardHammer>;
+var QuartziteScrew = <ore:screwQuartzite>;
+var Screwdriver = <ore:craftingToolScrewdriver>;
+var HHammer = <ore:craftingToolHardHammer>;
 
 
 // --- Ore Dictionary

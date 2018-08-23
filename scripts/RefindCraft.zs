@@ -15,7 +15,7 @@ var compDrawer = <StorageDrawers:compDrawers>;
 
 
 // --- Ore Dictionary
-val drawers = <ore:drawers>;
+var drawers = <ore:drawers>;
 drawers.add(<StorageDrawers:fullDrawers1:*>);
 drawers.add(<StorageDrawers:fullDrawers2:*>);
 drawers.add(<StorageDrawers:fullDrawers4:*>);
