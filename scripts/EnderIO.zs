@@ -230,38 +230,40 @@ Assembler.addRecipe(barsDarkSteel, itemRodDarkSteel * 3, integratedCircuit3 * 0,
 
 
 // --- GT Integration
-//ChemicalReactor.addRecipe(output, liquidOutput, input1, input2, liquidInput, durationTicks);
 ChemicalReactor.addRecipe(itemDustEnderium, null, itemDustEnderPearl, null, moltenEnderiumBase * 144, 200);
 ChemicalReactor.addRecipe(null, moltenEnderiumBase * 576, itemDustSilver, itemDustPlatinum, moltenTin * 288, 100);
-//Autoclave.addRecipe(output, input, liquid, chance, durationTicks, euPerTick);
+
 recipes.remove(crystalVibrant);
 Autoclave.addRecipe(crystalVibrant, itemDustEmerald, moltenVibrantAlloy * 128, 10000, 1000, 24);
+
 recipes.remove(crystalPulsating);
 Autoclave.addRecipe(crystalPulsating, itemDustDiamond, moltenPulsatingIron * 128, 10000, 1000, 24);
-//Assembler.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
+
 recipes.remove(capacitorBasic);
 Assembler.addRecipe(capacitorBasic, batteryHullSmall, itemIngotGold * 4, moltenRedstone * 288, 64, 8);
+
 recipes.remove(capacitorDualLayer);
 Assembler.addRecipe(capacitorDualLayer, capacitorBasic * 2, GTDustCoal, moltenEnergeticAlloy * 864, 50, 40);
 Assembler.addRecipe(capacitorDualLayer, capacitorBasic * 2, IC2DustCoal, moltenEnergeticAlloy * 864, 50, 40);
 Assembler.addRecipe(capacitorDualLayer, capacitorBasic * 2, eIODustCoal, moltenEnergeticAlloy * 864, 50, 40);
+
 recipes.remove(capacitorOctadic);
 Assembler.addRecipe(capacitorOctadic, capacitorDualLayer * 2, blockGlowstone, moltenVibrantAlloy * 864, 50, 40);
-//AlloySmelter.addRecipe(output, input1, input2, durationTicks, euPerTick);
+
 AlloySmelter.addRecipe(ingotEnergeticAlloy, itemIngotGold, blazePowder, 100, 16);
 AlloySmelter.addRecipe(ingotVibrantAlloy, ingotEnergeticAlloy, enderPearl, 100, 16);
 AlloySmelter.addRecipe(ingotPulsatingIron, itemIngotIron, enderPearl, 100, 16);
 AlloySmelter.addRecipe(ingotSoularium, itemIngotGold, soulSand, 100, 16);
 AlloySmelter.addRecipe(fusedQuartz, netherQuartz * 4, dustGlass, 200, 8);
 AlloySmelter.addRecipe(fusedQuartz, blockQuartz, dustGlass, 100, 16);
-//ChemicalBath.addRecipe(OutputArray, InputStack, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage);
+
 ChemicalBath.addRecipe([fusedQuartzEnlighten], fusedQuartz, moltenGlowstone * 576, [10000], 100, 8);
 ChemicalBath.addRecipe([clearGlassEnlighten], clearGlass, moltenGlowstone * 576, [10000], 100, 4);
 ChemicalBath.addRecipe([ingotConductiveIron], itemIngotIron, moltenRedstone * 144, [10000], 200, 8);
 ChemicalBath.addRecipe([clearGlass], glass, moltenChlorine * 50, [10000], 400, 2);
 
 
-// --- Item/block removal
+// --- Item/block removar
 recipes.remove(gearBasic);
 gearStone.remove(gearBasic);
 NEI.hide(gearBasic);

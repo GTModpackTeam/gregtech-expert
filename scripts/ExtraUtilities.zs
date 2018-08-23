@@ -187,7 +187,3 @@ recipes.addShapeless(<ExtraUtilities:angelRing:1>, [<ExtraUtilities:angelRing>, 
 mods.gregtech.CuttingSaw.addRecipe([<ExtraUtilities:curtains> * 2], <ore:blockWool>, <liquid:water> * 12, 120, 30);
 mods.gregtech.CuttingSaw.addRecipe([<ExtraUtilities:curtains> * 2], <ore:blockWool>, <liquid:ic2distilledwater> * 12, 60, 30);
 mods.gregtech.CuttingSaw.addRecipe([<ExtraUtilities:curtains> * 2], <ore:blockWool>, <liquid:lubricant> * 12, 30, 30);
-
-
-// --- GregTech Compressor - Unstable Ingot Block
-mods.gregtech.Compressor.addRecipe(<ExtraUtilities:decorativeBlock1:5>, <ExtraUtilities:unstableingot:2> * 9, 300, 2);

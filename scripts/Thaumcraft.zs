@@ -11,59 +11,59 @@ mods.thaumcraft.Research.addPrereq("ETHEREALBLOOM", "CRUCIBLE", false);
 
 // --- Variables
 // --- Minecraft
-val gold = <minecraft:gold_ingot>;
-val saplings = <ore:treeSapling>;
+var gold = <minecraft:gold_ingot>;
+var saplings = <ore:treeSapling>;
 
 // --- Botania
-val mysticalFlower = <Botania:flower:*>;
-val mysticalPetal= <Botania:petal:*>;
-val whitePetal= <Botania:petal:0>;
-val orangePetal = <Botania:petal:1>;
-val magentaPetal = <Botania:petal:2>;
-val lightBluePetal = <Botania:petal:3>;
-val yellowPetal = <Botania:petal:4>;
-val limePetal = <Botania:petal:5>;
-val pinkPetal = <Botania:petal:6>;
-val grayPetal = <Botania:petal:7>;
-val lightGrayPetal = <Botania:petal:8>;
-val cyanPetal = <Botania:petal:9>;
-val purplePetal = <Botania:petal:10>;
-val bluePetal = <Botania:petal:11>;
-val brownPetal = <Botania:petal:12>;
-val greenPetal = <Botania:petal:13>;
-val redPetal = <Botania:petal:14>;
-val blackPetal = <Botania:petal:15>;
-val lexica = <Botania:lexicon>;
-val manaLens = <Botania:lens:0>;
-val manaGlass = <Botania:manaGlass>;
-val prismarineShard = <Botania:manaResource:10>;
-val pastureSeed = <Botania:grassSeeds>;
+var mysticalFlower = <Botania:flower:*>;
+var mysticalPetal= <Botania:petal:*>;
+var whitePetal= <Botania:petal:0>;
+var orangePetal = <Botania:petal:1>;
+var magentaPetal = <Botania:petal:2>;
+var lightBluePetal = <Botania:petal:3>;
+var yellowPetal = <Botania:petal:4>;
+var limePetal = <Botania:petal:5>;
+var pinkPetal = <Botania:petal:6>;
+var grayPetal = <Botania:petal:7>;
+var lightGrayPetal = <Botania:petal:8>;
+var cyanPetal = <Botania:petal:9>;
+var purplePetal = <Botania:petal:10>;
+var bluePetal = <Botania:petal:11>;
+var brownPetal = <Botania:petal:12>;
+var greenPetal = <Botania:petal:13>;
+var redPetal = <Botania:petal:14>;
+var blackPetal = <Botania:petal:15>;
+var lexica = <Botania:lexicon>;
+var manaLens = <Botania:lens:0>;
+var manaGlass = <Botania:manaGlass>;
+var prismarineShard = <Botania:manaResource:10>;
+var pastureSeed = <Botania:grassSeeds>;
 
 // --- Thaumcraft
-val shards = <Thaumcraft:ItemShard:*>;
-val airShard = <Thaumcraft:ItemShard:0>;
-val fireShard = <Thaumcraft:ItemShard:1>;
-val waterShard = <Thaumcraft:ItemShard:2>;
-val earthShard = <Thaumcraft:ItemShard:3>;
-val orderShard = <Thaumcraft:ItemShard:4>;
-val entropyShard = <Thaumcraft:ItemShard:5>;
-val cryatal = <Thaumcraft:blockCrystal:*>;
-val airCryatal = <Thaumcraft:blockCrystal:0>;
-val fireCryatal = <Thaumcraft:blockCrystal:1>;
-val waterCryatal = <Thaumcraft:blockCrystal:2>;
-val earthCryatal = <Thaumcraft:blockCrystal:3>;
-val orderCryatal = <Thaumcraft:blockCrystal:4>;
-val entropyCryatal = <Thaumcraft:blockCrystal:5>;
-val Thaumonomicon = <Thaumcraft:ItemThaumonomicon>;
-val silverwoodSapling = <Thaumcraft:blockCustomPlant:1>;
-val greatwoodSapling = <Thaumcraft:blockCustomPlant>;
-val cinderpearl = <Thaumcraft:blockCustomPlant:2>;
-val shimmerleaf = <Thaumcraft:blockCustomPlant:3>;
-val table = <Thaumcraft:blockTable>;
-val thaumometer = <Thaumcraft:ItemThaumometer>;
-val livingwoodSlab = <Botania:livingwood1Slab>;
-val livingwoodPlanks = <Botania:livingwood:1>;
-val thaumiumGolem = <Thaumcraft:ItemGolemPlacer:7>;
+var shards = <Thaumcraft:ItemShard:*>;
+var airShard = <Thaumcraft:ItemShard:0>;
+var fireShard = <Thaumcraft:ItemShard:1>;
+var waterShard = <Thaumcraft:ItemShard:2>;
+var earthShard = <Thaumcraft:ItemShard:3>;
+var orderShard = <Thaumcraft:ItemShard:4>;
+var entropyShard = <Thaumcraft:ItemShard:5>;
+var cryatal = <Thaumcraft:blockCrystal:*>;
+var airCryatal = <Thaumcraft:blockCrystal:0>;
+var fireCryatal = <Thaumcraft:blockCrystal:1>;
+var waterCryatal = <Thaumcraft:blockCrystal:2>;
+var earthCryatal = <Thaumcraft:blockCrystal:3>;
+var orderCryatal = <Thaumcraft:blockCrystal:4>;
+var entropyCryatal = <Thaumcraft:blockCrystal:5>;
+var Thaumonomicon = <Thaumcraft:ItemThaumonomicon>;
+var silverwoodSapling = <Thaumcraft:blockCustomPlant:1>;
+var greatwoodSapling = <Thaumcraft:blockCustomPlant>;
+var cinderpearl = <Thaumcraft:blockCustomPlant:2>;
+var shimmerleaf = <Thaumcraft:blockCustomPlant:3>;
+var table = <Thaumcraft:blockTable>;
+var thaumometer = <Thaumcraft:ItemThaumometer>;
+var livingwoodSlab = <Botania:livingwood1Slab>;
+var livingwoodPlanks = <Botania:livingwood:1>;
+var thaumiumGolem = <Thaumcraft:ItemGolemPlacer:7>;
 
 
 // --- Adding Recipes

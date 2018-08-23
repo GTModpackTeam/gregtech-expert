@@ -8,7 +8,7 @@ import mods.extraUtils.QED;
 
 
 // --- Ore Dictionary
-val quartz = <ore:quartz>;
+var quartz = <ore:quartz>;
 quartz.add(<minecraft:quartz>);
 quartz.add(<appliedenergistics2:item.ItemMultiMaterial:10>);
 quartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
