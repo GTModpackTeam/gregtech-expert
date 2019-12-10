@@ -172,7 +172,6 @@ recipes.remove(<appliedenergistics2:tile.BlockFluix>);
 
 // ||||| Items |||||
 
-
 // --- Quartz Fiber
 recipes.remove(QuartzFiber);
 
