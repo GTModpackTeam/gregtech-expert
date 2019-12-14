@@ -3,24 +3,24 @@
 
 
 // --- IC2compressor recipe
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed>, <minecraft:cobblestone> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:1>, <ExtraUtilities:cobblestone_compressed> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:2>, <ExtraUtilities:cobblestone_compressed:1> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:3>, <ExtraUtilities:cobblestone_compressed:2> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:4>, <ExtraUtilities:cobblestone_compressed:3> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:5>, <ExtraUtilities:cobblestone_compressed:4> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:6>, <ExtraUtilities:cobblestone_compressed:5> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:7>, <ExtraUtilities:cobblestone_compressed:6> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:8>, <minecraft:dirt> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:9>, <ExtraUtilities:cobblestone_compressed:8> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:10>, <ExtraUtilities:cobblestone_compressed:9> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:11>, <ExtraUtilities:cobblestone_compressed:10> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:12>, <minecraft:gravel> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:13>, <ExtraUtilities:cobblestone_compressed:12> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:14>, <minecraft:sand> * 9);
-Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:15>, <ExtraUtilities:cobblestone_compressed:14> * 9);
-Compressor.addRecipe(<ExtraUtilities:bedrockiumIngot>, <ExtraUtilities:cobblestone_compressed:7> * 9);
-Compressor.addRecipe(<ExtraUtilities:block_bedrockium>, <ExtraUtilities:bedrockiumIngot> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:0>, <minecraft:cobblestone> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:1>, <ExtraUtilities:cobblestone_compressed:0> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:2>, <ExtraUtilities:cobblestone_compressed:1> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:3>, <ExtraUtilities:cobblestone_compressed:2> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:4>, <ExtraUtilities:cobblestone_compressed:3> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:5>, <ExtraUtilities:cobblestone_compressed:4> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:6>, <ExtraUtilities:cobblestone_compressed:5> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:7>, <ExtraUtilities:cobblestone_compressed:6> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:8>, <minecraft:dirt> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:9>, <ExtraUtilities:cobblestone_compressed:8> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:10>, <ExtraUtilities:cobblestone_compressed:9> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:11>, <ExtraUtilities:cobblestone_compressed:10> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:12>, <minecraft:gravel> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:13>, <ExtraUtilities:cobblestone_compressed:12> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:14>, <minecraft:sand> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:cobblestone_compressed:15>, <ExtraUtilities:cobblestone_compressed:14> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:bedrockiumIngot>, <ExtraUtilities:cobblestone_compressed:7> * 9);
+mods.ic2.Compressor.addRecipe(<ExtraUtilities:block_bedrockium>, <ExtraUtilities:bedrockiumIngot> * 9);
 
 
 

@@ -24,10 +24,13 @@ Found creative tab: EnderIO
 Found creative tab: decorations
 Found creative tab: extraUtil
 Found creative tab: combat
+Found creative tab: extraUtil_FMP
+Found creative tab: floodlights
 Found creative tab: IC2
 Found creative tab: Nuclear Control 2
 Found creative tab: Logistics_Pipes
 Found creative tab: redstone
+Found creative tab: transportation
 Found creative tab: Nether Ores
 Found creative tab: tabOpenBlocks
 Found creative tab: core
@@ -38,11 +41,13 @@ Found creative tab: QuarryPlus
 Found creative tab: storageDrawers
 Found creative tab: thaumcraft
 Found creative tab: thaumicExploration
+Found creative tab: materials
 Found creative tab: bdew.ae2stuff
 Found creative tab: ae2wct
 Found creative tab: aobd
 Found creative tab: appliedenergistics2
 Found creative tab: appliedenergistics2.facades
+Found creative tab: avaritiaddons
 Found creative tab: tabWoodChiselBlocks
 Found creative tab: tabStairChiselBlocks
 Found creative tab: tabModdedChiselBlocks
@@ -55,9 +60,7 @@ Found creative tab: rt.name
 Found creative tab: GregTech.Main
 Found creative tab: GregTech.Materials
 Found creative tab: GregTech.Ores
-Found creative tab: transportation
 Found creative tab: brewing
-Found creative tab: materials
 Found creative tab: ThaumicEnergistics
 Found creative tab: tabWitchery
 Setting up ForgeMicroblock Library...
@@ -85,32 +88,25 @@ Found ItemStack minecraft:lava. 64xtile.lava@0
 hide called. Params: minecraft, mob_spawner
 Regex match found! minecraft:mob_spawner matches minecraft:mob_spawner.
 Found ItemStack minecraft:mob_spawner. 64xtile.mobSpawner@0
-override called. Params: minecraft, potion, 0
-Regex match found! minecraft:potion matches minecraft:potion.
-Found ItemStack minecraft:potion. 1xitem.potion@0
-override called. Params: minecraft, spawn_egg, 0
-Regex match found! minecraft:spawn_egg matches minecraft:spawn_egg.
-Found ItemStack minecraft:spawn_egg. 64xitem.monsterPlacer@0
 Loading: ThermalExpansion.js
 Loading: Mekanism.js
 Loading: ForgeMicroblock.js
-getRandomMaterial called. Returned: ProjRed|Illumination:projectred.illumination.lamp_30
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, ProjRed|Illumination:projectred.illumination.lamp_30
+getRandomMaterial called. Returned: ProjRed|Illumination:projectred.illumination.lamp_28
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, ProjRed|Illumination:projectred.illumination.lamp_28
 Loading: ExtraUtilities.js
 override called. Params: ExtraUtilities, drum, 0,1
 Regex match found! ExtraUtilities:drum matches ExtraUtilities:drum.
 Found ItemStack ExtraUtilities:drum. 64xtile.extrautils:drum@0
-getRandomMaterial called. Returned: ProjRed|Illumination:projectred.illumination.lamp_23
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ExtraUtilitiesObject). Params: 1,2,3, ProjRed|Illumination:projectred.illumination.lamp_23
+getRandomMaterial called. Returned: ProjRed|Illumination:projectred.illumination.lamp_26
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ExtraUtilitiesObject). Params: 1,2,3, ProjRed|Illumination:projectred.illumination.lamp_26
 Loading: BuildCraft.js
-getFacadesSize called. Returned: 2519
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.BCObject). Params: 1244
-Loading: Bibliocraft.js
+getFacadesSize called. Returned: 2528
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.BCObject). Params: 707
 Loading: AppliedEnergistics2.js
 getFacadeItem called. Returned: appliedenergistics2:item.ItemFacade
 getSubTypes called.
-getNumberOfTypes called. Returned: 1959
-override called. Params: appliedenergistics2, item.ItemFacade, 1914
+getNumberOfTypes called. Returned: 1967
+override called. Params: appliedenergistics2, item.ItemFacade, 234
 Regex match found! appliedenergistics2:item.ItemFacade matches appliedenergistics2:item.ItemFacade.
 Found ItemStack appliedenergistics2:item.ItemFacade. 64xitem.appliedenergistics2.ItemFacade@0
 Loading: Tcon.js

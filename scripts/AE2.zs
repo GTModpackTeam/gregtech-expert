@@ -172,40 +172,6 @@ recipes.remove(<appliedenergistics2:tile.BlockFluix>);
 
 // ||||| Items |||||
 
-
-// --- Certus Circuit
-mods.appeng.Inscriber.removeRecipe(CertusCircuit);
-
-// --- Calculation Circuit
-mods.appeng.Inscriber.removeRecipe(CalculationCircuit);
-
-// --- Gold Circuit
-mods.appeng.Inscriber.removeRecipe(GoldCircuit);
-
-// --- Gold Circuit
-mods.appeng.Inscriber.removeRecipe(LogicCircuit);
-
-// --- Diamond Circuit
-mods.appeng.Inscriber.removeRecipe(DiamondCircuit);
-
-// --- Engineering Circuit
-mods.appeng.Inscriber.removeRecipe(EngineeringCircuit);
-
-// --- PrintedSilicon
-mods.appeng.Inscriber.removeRecipe(PrintedSilicon);
-
-// --- CalculationPress
-mods.appeng.Inscriber.removeRecipe(CalculationPress);
-
-// --- LogicPress
-mods.appeng.Inscriber.removeRecipe(LogicPress);
-
-// --- EngineeringPress
-mods.appeng.Inscriber.removeRecipe(EngineeringPress);
-
-// --- SiliconPress
-mods.appeng.Inscriber.removeRecipe(SiliconPress);
-
 // --- Quartz Fiber
 recipes.remove(QuartzFiber);
 
