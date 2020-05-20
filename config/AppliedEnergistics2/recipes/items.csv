@@ -3077,7 +3077,7 @@ extracells:vibrantchamberfluid, Fluid Vibration Chamber
 ExtraUtilities:chestMini, Mini-Chest
 ExtraUtilities:chestFull, Slightly Larger Chest
 ExtraUtilities:enderCollector, Ender Collector
-ExtraUtilities:endConstructor:0, QED (Quantum Entanglement Diviner)
+ExtraUtilities:endConstructor:0, QED (Quantum Enrichment Device)
 ExtraUtilities:endConstructor:2, Ender-Flux Crystal
 ExtraUtilities:endMarker, Ender-Marker
 ExtraUtilities:curtains, Blackout Curtains
@@ -7149,9 +7149,6 @@ witchery:cstonepressureplate, Pressure Plate
 witchery:csnowpressureplate, Snow Pressure Plate
 witchery:cbuttonwood, Button
 witchery:cbuttonstone, Button
-ForgeRelocation:relocation.blockmovingrow:0, tile.relocation.blockmovingrow|0.name
-MCFrames:mcframes.motor:0, Debug Frame Motor
-MCFrames:mcframes.frame, Frame
 minecraft:record_13, Music Disc
 minecraft:record_cat, Music Disc
 minecraft:record_blocks, Music Disc
