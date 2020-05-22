@@ -86,7 +86,6 @@ recipes.addShaped(<Thaumcraft:blockCosmeticSolid>, [
 ]);
 
 
-
 // --- Adding Research
 // --- BOTANIA
 recipes.addShapeless(greatwoodSapling, [pastureSeed, greenPetal, saplings]);
@@ -106,26 +105,25 @@ mods.thaumcraft.Research.addCraftingPage("BOTANIA", cinderpearl);
 mods.thaumcraft.Research.addCraftingPage("BOTANIA", shimmerleaf);
 game.setLocalization("en_US", "tc.research_name.BOTANIA", "Botania");
 game.setLocalization("en_US", "tc.research_text.BOTANIA", "Thaumcraft sapling and more");
-game.setLocalization("en_US", "tc.research_page.BOTANIA", "End of flux?");
-
+game.setLocalization("en_US", "tc.research_page.BOTANIA", "All those pretty flower patches around seem to harness some kind of magical energies similar to that of aura nodes.<BR>You've determined that you can use these flowers to make elemental shards and even transform saplings into Greatwood and Silverwood saplings.<BR>It also seems that some more advanced Botanical objects can be created with Thaumaturgical items, and vice versa. With more experience you're sure you'll unlock these secrets some day.");
 
 // --- BOTANIAFLOWER
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", whitePetal * 2, whitePetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", orangePetal * 2, orangePetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", magentaPetal * 2, magentaPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", lightBluePetal * 2, lightBluePetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", yellowPetal * 2, yellowPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", limePetal * 2, limePetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", pinkPetal * 2, pinkPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", grayPetal * 2, grayPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", lightGrayPetal * 2, lightGrayPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", cyanPetal * 2, cyanPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", purplePetal * 2, purplePetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", bluePetal * 2, bluePetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", brownPetal * 2, brownPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", greenPetal * 2, greenPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", redPetal * 2, redPetal, "terra 2, auram 1");
-mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", blackPetal * 2, blackPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", whitePetal * 4, whitePetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", orangePetal * 4, orangePetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", magentaPetal * 4, magentaPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", lightBluePetal * 4, lightBluePetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", yellowPetal * 4, yellowPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", limePetal * 4, limePetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", pinkPetal * 4, pinkPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", grayPetal * 4, grayPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", lightGrayPetal * 4, lightGrayPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", cyanPetal * 4, cyanPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", purplePetal * 4, purplePetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", bluePetal * 4, bluePetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", brownPetal * 4, brownPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", greenPetal * 4, greenPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", redPetal * 4, redPetal, "terra 2, auram 1");
+mods.thaumcraft.Crucible.addRecipe("BOTANIAFLOWER", blackPetal * 4, blackPetal, "terra 2, auram 1");
 
 mods.thaumcraft.Research.addResearch("BOTANIAFLOWER", "ALCHEMY", "aer 5, aqua 5, terra 5, herba 3, ordo 1, victus 5, terra 10", 1, -2, 1, mysticalFlower);
 mods.thaumcraft.Research.setConcealed("BOTANIAFLOWER", true);
@@ -152,7 +150,6 @@ game.setLocalization("en_US", "tc.research_name.BOTANIAFLOWER", "Mystical Petal"
 game.setLocalization("en_US", "tc.research_text.BOTANIAFLOWER", "Do you want mystical flowers?");
 game.setLocalization("en_US", "tc.research_page.BOTANIAFLOWER", "Crucible for Crafting Mystical Petal recipe");
 
-
 // --- THAUM
 mods.thaumcraft.Research.addResearch("THAUM", "ALCHEMY", "aer 5, aqua 5, arbor 5, auram 10, herba 3, terra 1", -2, -4, 0, Thaumonomicon);
 mods.thaumcraft.Research.setConcealed("THAUM", true);
@@ -163,7 +160,6 @@ mods.thaumcraft.Research.addPage("THAUM", "tc.research_page.THAUM");
 game.setLocalization("en_US", "tc.research_name.THAUM", "Thaumcraft");
 game.setLocalization("en_US", "tc.research_text.THAUM", "To get started");
 game.setLocalization("en_US", "tc.research_page.THAUM", "It is in realization.<BR>To proceed further on the study.");
-
 
 // --- CRUCIBLE
 mods.thaumcraft.Crucible.addRecipe("CRUCIBLE", airCryatal, airShard, "aer 8, auram 2");

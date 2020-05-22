@@ -61,6 +61,10 @@ recipes.addShaped(<minecraft:comparator>, [
 ]);
 
 
+// --- Chemical Bath
+mods.gregtech.ChemicalBath.addRecipe([<gregtech:gt.metaitem.03:32073>], <minecraft:poisonous_potato>, <liquid:ic2uumatter> * 16, [20000], 400, 4);
+
+
 // --- QED
 QED.addShapedRecipe(<minecraft:end_portal_frame>, [
     [<ExtraUtilities:decorativeBlock1:1>, null, <ExtraUtilities:decorativeBlock1:1>],
