@@ -172,6 +172,7 @@ recipes.remove(<appliedenergistics2:tile.BlockFluix>);
 
 // ||||| Items |||||
 
+
 // --- Quartz Fiber
 recipes.remove(QuartzFiber);
 
@@ -742,9 +743,9 @@ recipes.addShaped(<appliedenergistics2:tile.BlockVibrationChamber>, [
 
 //ME Security Terminal
 recipes.addShaped(<appliedenergistics2:tile.BlockSecurity>, [
-[<ore:plateAluminium>, <ore:chestWood>, <ore:plateAluminium>],
+[<ore:plateSteel>, <ore:chestWood>, <ore:plateSteel>],
 [<appliedenergistics2:item.ItemMultiPart:16>, <appliedenergistics2:item.ItemMultiMaterial:37>, <appliedenergistics2:item.ItemMultiPart:16>],
-[<ore:plateAluminium>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:plateAluminium>]]);
+[<ore:plateSteel>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:plateSteel>]]);
 
 //Advanced Card
 recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:28>, [

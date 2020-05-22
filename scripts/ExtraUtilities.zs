@@ -4,8 +4,6 @@
 
 
 // --- Removing Recipes
-recipes.remove(<ExtraUtilities:bedrockiumIngot>);
-recipes.remove(<ExtraUtilities:block_bedrockium>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed:15>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed:14>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed:13>);
@@ -24,10 +22,7 @@ recipes.remove(<ExtraUtilities:cobblestone_compressed:1>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed>);
 recipes.remove(<ExtraUtilities:watering_can:1>);
 recipes.remove(<ExtraUtilities:nodeUpgrade:2>);
-recipes.remove(<ExtraUtilities:nodeUpgrade:1>);
 recipes.remove(<ExtraUtilities:pipes>);
-recipes.remove(<ExtraUtilities:extractor_base:6>);
-recipes.remove(<ExtraUtilities:extractor_base>);
 recipes.remove(<ExtraUtilities:sound_muffler>);
 recipes.remove(<ExtraUtilities:endConstructor>);
 recipes.remove(<ExtraUtilities:filing>);
