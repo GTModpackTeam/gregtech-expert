@@ -70,7 +70,7 @@ jobs:
         uses: ./.github/actions/curseforge-modpack-upload
         with: 
           api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: '565238'
+          project-id: '247653'
           modpack-path: ./GTExpert-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
           modpack-server-path: ./GTExpert-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
           changelog: 'Check the changes here. [Github - CHANGELOG.md](https://github.com/GTModpackTeam/gregtech-expert/blob/master/CHANGELOG.md "")' 
