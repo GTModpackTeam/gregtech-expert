@@ -1,7 +1,8 @@
-config/INpureProjects/logs/*
-config/AppliedEnergistics2/recipes/items.csv
-config/InvTweaksRules.txt
-config/InvTweaksTree.txt
-config/localconfig-example.txt
-config/localconfig.txt
-config/witchery_debug.cfg
+overrides/INpureProjects/logs/*
+overrides/AppliedEnergistics2/recipes/items.csv
+overrides/InvTweaksRules.txt
+overrides/InvTweaksTree.txt
+overrides/localconfig-example.txt
+overrides/localconfig.txt
+overrides/witchery_debug.cfg
+overrides/overrides/oauth.cfg
