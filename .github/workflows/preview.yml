@@ -2,7 +2,7 @@ name: Deploy preview modpack
 on:
   push:
     tags:
-      - '*-preview'
+      - '*-pr-*'
 
 jobs:
   deploy:
@@ -12,20 +12,19 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Get the version
-        id: get_version
         run: |
-          echo ::set-output name=VERSION::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $1}')
-          echo ::set-output name=LEVEL::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $2}')
+          echo VERSION=$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $1}') >> $GITHUB_ENV
+          echo PR_VERSION=$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $3}') >> $GITHUB_ENV
 
       - name: Set the version
         run: |
-          MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
+          MODPACKVERSION=${{ env.VERSION }}
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
 
       - name: Archive Release CF
         run: |
-          zip -r ./GTExpert-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip ./manifest.json ./modlist.html ./overrides/config/ ./overrides/mods/ ./overrides/resources/ ./overrides/scripts/
+          zip -r ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/mods/ ./overrides/scripts/
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -46,12 +45,16 @@ jobs:
       - name: Archive Release MMC
         run: |
           mv -vf ./overrides/ .minecraft/
-          zip -r ./GTExpert-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+          zip -r ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+
+      - name: Move Server Files
+        run: |
+          mv -vf ./serverfiles/* ./
 
       - name: Archive Release Server
         run: |
           mv -vf .minecraft/* ./
-          zip -r ./GTExpert-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./config/ ./mods/ ./resources/ ./scripts/
+          zip -r ./GTExpert-${{ env.VERSION }}-${{ env.LEVEL }}-server.zip ./PleaseRead.txt ./Install.bat ./Install.sh ./ServerStart.bat ./ServerStart.sh ./settings.bat ./settings.sh ./TmuxServer.sh ./bansoukou/ ./config/ ./mods/ ./scripts/
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
@@ -60,6 +63,6 @@ jobs:
           prerelease: true
           generate_release_notes: true
           files: |
-            ./GTExpert-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
-            ./GTExpert-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip
-            ./GTExpert-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
+            ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-cf.zip
+            ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-mmc.zip
+            ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-server.zip
