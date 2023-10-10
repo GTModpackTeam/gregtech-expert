@@ -1,0 +1,31 @@
+version: "3.8"
+
+# Repository for the image below: https://github.com/itzg/docker-minecraft-server
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:java8-multiarch
+    ports:
+      - 25565:25565
+    environment:
+      JVM_OPTS: -XX:MaxMetaspaceSize=512M -Dfml.queryResult=confirm -XX:+UseContainerSupport -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dterminal.jline=false -Dterminal.ansi=true
+      USE_AIKAR_FLAGS: true
+      EULA: true
+      TYPE: AUTO_CURSEFORGE
+      CF_SLUG: gregtech-expert
+      # Get the ID of the Server version from CF. The following is an example and specifies v4.3.7.
+      # https://www.curseforge.com/minecraft/modpacks/gregtech-expert/files
+      CF_FILE_ID: 3605605
+      # Default RAM allocation
+      MEMORY: 4G
+      OPS: Steve
+    volumes:
+      - ./data:/data
+      - /etc/timezone:/etc/timezone:ro
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 8G
