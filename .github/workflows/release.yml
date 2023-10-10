@@ -46,7 +46,7 @@ jobs:
 
       - name: Archive Release CF
         run: |
-          zip -r ./${{ env.NAME }}-${{ env.FULL_VERSION }}-cf.zip ./manifest.json ./modlist.html ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/scripts/
+          zip -r ./${{ env.NAME }}-${{ env.FULL_VERSION }}-cf.zip ./manifest.json ./modlist.html ./manifest.json ./modlist.html ./overrides/config/ ./overrides/scripts/
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -76,7 +76,7 @@ jobs:
       - name: Archive Release Server
         run: |
           mv -vf .minecraft/* ./
-          zip -r ./${{ env.NAME }}-${{ env.FULL_VERSION }}-server.zip ./docker-compose.yml ./PleaseRead.txt ./Install.bat ./Install.sh ./ServerStart.bat ./ServerStart.sh ./settings.bat ./settings.sh ./TmuxServer.sh ./bansoukou/ ./config/ ./mods/ ./scripts/
+          zip -r ./${{ env.NAME }}-${{ env.FULL_VERSION }}-server.zip ./docker-compose.yml ./PleaseRead.txt ./Install.bat ./Install.sh ./ServerStart.bat ./ServerStart.sh ./settings.bat ./settings.sh ./TmuxServer.sh ./config/ ./mods/ ./scripts/
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1

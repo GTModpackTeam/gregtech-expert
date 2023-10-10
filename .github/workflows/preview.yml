@@ -54,7 +54,7 @@ jobs:
       - name: Archive Release Server
         run: |
           mv -vf .minecraft/* ./
-          zip -r ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-server.zip ./docker-compose.yml ./PleaseRead.txt ./Install.bat ./Install.sh ./ServerStart.bat ./ServerStart.sh ./settings.bat ./settings.sh ./TmuxServer.sh ./bansoukou/ ./config/ ./mods/ ./scripts/
+          zip -r ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-server.zip ./docker-compose.yml ./PleaseRead.txt ./Install.bat ./Install.sh ./ServerStart.bat ./ServerStart.sh ./settings.bat ./settings.sh ./TmuxServer.sh ./config/ ./mods/ ./scripts/
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
