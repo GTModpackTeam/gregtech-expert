@@ -67,6 +67,7 @@ jobs:
       - name: Archive Release MMC
         run: |
           mv -vf ./overrides/ .minecraft/
+          rm -rf ./xmods/
           zip -r ./${{ env.NAME }}-${{ env.FULL_VERSION }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
 
       - name: Move Server Files
