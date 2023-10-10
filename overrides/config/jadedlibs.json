@@ -1,0 +1,10 @@
+[
+	{
+	    "repo": "https://github.com/GTModpackTeam/gregtech-expert/tree/master/overrides/xmods",
+	    "file": "CodeChickenCore-1.1.11.jar"
+	},
+	{
+	    "repo": "https://github.com/GTModpackTeam/gregtech-expert/tree/master/overrides/xmods",
+	    "file": "NotEnoughItems-2.4.3-GTNH.jar"
+	}
+]
