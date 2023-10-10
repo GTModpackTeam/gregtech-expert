@@ -4,12 +4,12 @@
 
 JAVA_PATH="/usr/lib/jvm/java-8-openjdk/bin/java"
 TMUX_SOCKET="steam"
-TMUX_SESSION="gte"
-MC_HOME="/home/minecraft/gte/"
-MC_JAR_FILE="forge-1.12.2-14.23.5.2860.jar"
-MC_MIN_RAM="2G"
+TMUX_SESSION="gte1"
+MC_HOME="/home/minecraft/gte1/"
+MC_JAR_FILE="forge-1.7.10-10.13.4.1614-1.7.10-universal.jar"
+MC_MIN_RAM="4G"
 MC_MAX_RAM="8G"
-MC_JVM_PARAMETERS="-XX:MetaspaceSize=256M -XX:MaxMetaspaceSize=256M -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=40 -XX:G1MaxNewSizePercent=50 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=15 -XX:InitiatingHeapOccupancyPercent=20 -Dlog4j.configurationFile=log4j2_112-116.xml"
+MC_JVM_PARAMETERS="-XX:MaxMetaspaceSize=512M -XX:MaxRAMPercentage=95.0 -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dterminal.jline=false -Dterminal.ansi=true -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled -XX:MaxTenuringThreshold=15 -XX:MaxGCPauseMillis=30 -XX:GCPauseIntervalMillis=150 -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -XX:+UseFastAccessorMethods -XX:+UseCompressedOops -XX:+OptimizeStringConcat -XX:+AggressiveOpts -XX:ReservedCodeCacheSize=2048m -XX:+UseCodeCacheFlushing -XX:SoftRefLRUPolicyMSPerMB=10000 -XX:ParallelGCThreads=10 -Djava.net.preferIPv4Stack=true -Dlog4j.configurationFile=log4j2_112-116.xml"
 
 is_server_running() {
     /usr/bin/tmux -L ${TMUX_SOCKET} has-session -t ${TMUX_SESSION} > /dev/null 2>&1
