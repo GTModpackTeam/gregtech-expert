@@ -1,18 +1,1 @@
-[
-    {
-        "repo": "https://github.com/GTModpackTeam/gregtech-expert/tree/master/overrides/xmods",
-        "file": "CodeChickenCore-1.1.10.jar"
-    },
-    {
-        "repo": "https://github.com/GTModpackTeam/gregtech-expert/tree/master/overrides/xmods",
-        "file": "CodeChickenLib-1.1.6.jar"
-    },
-	{
-        "repo": "https://github.com/GTModpackTeam/gregtech-expert/tree/master/overrides/xmods",
-        "file": "ForgeMultipart-1.7.10-1.2.0.347-universal.jar"
-    },
-    {
-        "repo": "https://github.com/GTModpackTeam/gregtech-expert/tree/master/overrides/xmods",
-        "file": "NotEnoughItems-2.3.26-GTNH.jar"
-    }
-]
+[]
