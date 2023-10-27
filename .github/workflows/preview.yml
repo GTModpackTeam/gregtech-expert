@@ -24,7 +24,7 @@ jobs:
 
       - name: Archive Release CF
         run: |
-          zip -r ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/config/ ./overrides/scripts/
+          zip -r ./GTExpert-${{ env.VERSION }}-pr-${{ env.PR_VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/config/ ./overrides/mods/ ./overrides/scripts/
 
       - name: Setup Python
         uses: actions/setup-python@v4

@@ -1,6 +1,14 @@
 [
     {
-        "repo": "https://github.com/GTNewHorizons/Minetweaker-Gregtech-5-Addon/releases/download/2.0.2/GTTweaker-2.0.2.jar",
+        "repo": "https://github.com/GTNewHorizons/CraftTweaker/releases/download/3.2.13/",
+        "file": "CraftTweaker-3.2.13.jar"
+    },
+    {
+        "repo": "https://github.com/GTNewHorizons/ModTweaker/releases/download/0.9.10/",
+        "file": "ModTweaker2-0.9.10.jar"
+    },
+    {
+        "repo": "https://github.com/GTNewHorizons/Minetweaker-Gregtech-5-Addon/releases/download/2.0.2/",
         "file": "GTTweaker-2.0.2.jar"
     }
 ]
