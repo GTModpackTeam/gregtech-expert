@@ -46,7 +46,7 @@ jobs:
 
       - name: Archive Release CF
         run: |
-          zip -r ./${{ env.NAME }}-${{ env.FULL_VERSION }}-cf.zip ./manifest.json ./modlist.html ./manifest.json ./modlist.html ./overrides/config/ ./overrides/scripts/
+          zip -r ./${{ env.NAME }}-${{ env.FULL_VERSION }}-cf.zip ./manifest.json ./modlist.html ./manifest.json ./modlist.html ./overrides/config/ ./overrides/mods/ ./overrides/scripts/
 
       - name: Setup Python
         uses: actions/setup-python@v4
